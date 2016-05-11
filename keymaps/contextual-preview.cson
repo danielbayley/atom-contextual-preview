@@ -1,2 +1,5 @@
-'atom-workspace': #atom-text-editor
-	'cmd-p': 'contextual-preview:toggle' #preview
+'.platform-darwin atom-workspace, .platform-darwin atom-workspace atom-text-editor':
+  'cmd-p': 'contextual-preview:toggle' #preview
+
+'.platform-win32 atom-workspace, .platform-win32 atom-workspace atom-text-editor, .platform-linux atom-workspace, .platform-linux atom-workspace atom-text-editor':
+  'alt-shift-p': 'contextual-preview:toggle' #preview

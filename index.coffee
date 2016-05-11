@@ -16,6 +16,10 @@ module.exports = activate: ->
 		if grammar == 'source.gfm' # Markdown
 			preview "markdown-preview:toggle" #"#{pkg}:#{cmd}" #pkg.substr 0,pkg.indexOf ':'
 
+		else if grammar == 'source.asciidoc' # AsciiDoc
+			if installed pkg = 'asciidoc-preview'
+				preview "#{pkg}:toggle"
+
 		else if grammar == 'text.html.basic' #/html/.test grammar
 			if installed pkg = 'atom-html-preview'
 			#if exec "apm list -ip | grep -q #{pkg}"
